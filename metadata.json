@@ -1,0 +1,6 @@
+{
+  "name": "3-Set Venn Engine & De Morgan Logic Studio",
+  "description": "High-performance, offline-first 3-set Venn diagram logic engine, De Morgan proof verifier, and cardinality word problem solver by Sir Eugene Technologies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

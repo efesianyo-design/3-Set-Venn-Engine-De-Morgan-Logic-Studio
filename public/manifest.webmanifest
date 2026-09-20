@@ -1,0 +1,16 @@
+{
+  "name": "3-Set Venn Engine & De Morgan Logic Studio",
+  "short_name": "VennLogic",
+  "description": "High-performance offline-first 3-set Venn diagram logic engine and De Morgan verifier by Sir Eugene Technologies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

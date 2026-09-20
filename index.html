@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e40af" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>3-Set Venn Engine & De Morgan Logic Studio</title>
+    <meta name="description" content="High-performance, offline-first 3-set Venn diagram logic engine, De Morgan proof verifier, and cardinality word problem solver by Sir Eugene Technologies." />
+    <meta property="og:title" content="3-Set Venn Engine & De Morgan Logic Studio" />
+    <meta property="og:description" content="High-performance, offline-first 3-set Venn diagram logic engine, De Morgan proof verifier, and cardinality word problem solver by Sir Eugene Technologies." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- KaTeX CSS for mathematical rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGExxAU4Vm5HtQPsTA9DxDY8YVCdelta" crossorigin="anonymous" />
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased select-none overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register offline service worker if supported
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(
+            (registration) => {
+              console.log('PWA ServiceWorker registration successful with scope: ', registration.scope);
+            },
+            (err) => {
+              console.log('PWA ServiceWorker registration failed: ', err);
+            }
+          );
+        });
+      }
+    </script>
+  </body>
+</html>
+
